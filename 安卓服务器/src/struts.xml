@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+     <constant name="struts.i18n.encoding" value="gbk"/>
+     <constant name="struts.devMode" value="true" />
+     <!--Struts2中Action对象的创建交给spring完成-->
+     <constant name="struts.objectFactory" value="spring" />   
+       
+          
+	 <package name="login" namespace="/login" extends="struts-default">
+	        <action name="login_*" class="loginAction" method="{1}">
+	        	<result name="main_view">/main.jsp</result>
+	        	<result name="error">/error.jsp</result>
+	        	<result name="input">/login.jsp</result> 
+	        	<result name="login_view">/login.jsp</result>
+	          
+	        </action>  
+	 </package>
+	 
+         <!-- UserInfoAction配置 -->
+         <package name="UserInfo" namespace="/UserInfo" extends="struts-default">
+           <action name="UserInfo_*" class="userInfoAction" method="{1}">
+             <result name="add_view">/UserInfo_add.jsp</result>
+             <result name="input">/UserInfo_add.jsp</result>
+             <result name="add_success">/message.jsp</result>
+             <result name="delete_success">/message.jsp</result>
+             <result name="modify_success">/message.jsp</result>
+             <result name="error">/error.jsp</result>
+             <result name="query_view">/UserInfo_query_result.jsp</result>
+             <result name="front_query_view">/UserInfo_frontquery_result.jsp</result>
+             <result name="front_show_view">/UserInfo_frontshow.jsp</result>
+             <result name="modify_view">/UserInfo_modify.jsp</result>
+           </action>
+         </package>
+
+         <!-- JzTypeAction配置 -->
+         <package name="JzType" namespace="/JzType" extends="struts-default">
+           <action name="JzType_*" class="jzTypeAction" method="{1}">
+             <result name="add_view">/JzType_add.jsp</result>
+             <result name="input">/JzType_add.jsp</result>
+             <result name="add_success">/message.jsp</result>
+             <result name="delete_success">/message.jsp</result>
+             <result name="modify_success">/message.jsp</result>
+             <result name="error">/error.jsp</result>
+             <result name="query_view">/JzType_query_result.jsp</result>
+             <result name="front_query_view">/JzType_frontquery_result.jsp</result>
+             <result name="front_show_view">/JzType_frontshow.jsp</result>
+             <result name="modify_view">/JzType_modify.jsp</result>
+           </action>
+         </package>
+
+         <!-- CarAction配置 -->
+         <package name="Car" namespace="/Car" extends="struts-default">
+           <action name="Car_*" class="carAction" method="{1}">
+             <result name="add_view">/Car_add.jsp</result>
+             <result name="input">/Car_add.jsp</result>
+             <result name="add_success">/message.jsp</result>
+             <result name="delete_success">/message.jsp</result>
+             <result name="modify_success">/message.jsp</result>
+             <result name="error">/error.jsp</result>
+             <result name="query_view">/Car_query_result.jsp</result>
+             <result name="front_query_view">/Car_frontquery_result.jsp</result>
+             <result name="front_show_view">/Car_frontshow.jsp</result>
+             <result name="modify_view">/Car_modify.jsp</result>
+           </action>
+         </package>
+
+         <!-- CarModelAction配置 -->
+         <package name="CarModel" namespace="/CarModel" extends="struts-default">
+           <action name="CarModel_*" class="carModelAction" method="{1}">
+             <result name="add_view">/CarModel_add.jsp</result>
+             <result name="input">/CarModel_add.jsp</result>
+             <result name="add_success">/message.jsp</result>
+             <result name="delete_success">/message.jsp</result>
+             <result name="modify_success">/message.jsp</result>
+             <result name="error">/error.jsp</result>
+             <result name="query_view">/CarModel_query_result.jsp</result>
+             <result name="front_query_view">/CarModel_frontquery_result.jsp</result>
+             <result name="front_show_view">/CarModel_frontshow.jsp</result>
+             <result name="modify_view">/CarModel_modify.jsp</result>
+           </action>
+         </package>
+
+         <!-- YunshuAction配置 -->
+         <package name="Yunshu" namespace="/Yunshu" extends="struts-default">
+           <action name="Yunshu_*" class="yunshuAction" method="{1}">
+             <result name="add_view">/Yunshu_add.jsp</result>
+             <result name="input">/Yunshu_add.jsp</result>
+             <result name="add_success">/message.jsp</result>
+             <result name="delete_success">/message.jsp</result>
+             <result name="modify_success">/message.jsp</result>
+             <result name="error">/error.jsp</result>
+             <result name="query_view">/Yunshu_query_result.jsp</result>
+             <result name="front_query_view">/Yunshu_frontquery_result.jsp</result>
+             <result name="front_show_view">/Yunshu_frontshow.jsp</result>
+             <result name="modify_view">/Yunshu_modify.jsp</result>
+           </action>
+         </package>
+
+
+	 
+	 
+
+ 	 <package name="password" namespace="/password" extends="struts-default">
+	        <action name="ChangePassword" class="changePasswordAction">  
+	        	<result name="change_success">/message.jsp</result>
+	        	<result name="error">/error.jsp</result> 
+	        </action>  
+	 </package> 
+	  
+	 <package name="User" namespace="/User" extends="struts-default">
+	        <action name="User_*" class="com.chengxusheji.action.UserAction" method="{1}">  
+	        	<result name="user_query_view">/user_query_result.jsp</result>
+	        	<result name="success">/message.jsp</result>
+	        	<result name="error">/error.jsp</result> 
+	        </action>  
+	 </package>  
+	 
+</struts>

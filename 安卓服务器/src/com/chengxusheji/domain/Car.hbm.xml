@@ -1,0 +1,93 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.chengxusheji.domain">
+
+	<class name="Car" table="Car">
+
+          <!-- 主键车辆id -->
+          <id name="carId" column="carId">
+            <generator class="native"/>
+          </id>
+
+          <!-- 简单字符串属性: 车牌 -->
+          <property
+            name="carNo"
+            column="carNo"
+            type="string"
+            length="20"
+          />
+
+          <!-- 多对一属性: 车型 -->
+          <many-to-one name="carModel"
+            column="carModel"
+            class="CarModel"
+            lazy="false"
+            outer-join="true"
+            cascade="save-update"
+          />
+
+          <!-- 简单字符串属性: 品牌 -->
+          <property
+            name="pinpai"
+            column="pinpai"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单字符串属性: 油型 -->
+          <property
+            name="youxing"
+            column="youxing"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单字符串属性: 耗油量 -->
+          <property
+            name="haoyouliang"
+            column="haoyouliang"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单字符串属性: 车险 -->
+          <property
+            name="chexian"
+            column="chexian"
+            type="string"
+            length="30"
+          />
+
+          <!-- 简单字符串属性: 总里程(公里) -->
+          <property
+            name="zonglicheng"
+            column="zonglicheng"
+            type="string"
+            length="30"
+          />
+
+          <!-- 简单字符串属性: 维修次数 -->
+          <property
+            name="wxcs"
+            column="wxcs"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单字符串属性: 车辆备注 -->
+          <property
+            name="carMemo"
+            column="carMemo"
+            type="string"
+            length="800"
+          />
+
+
+		 
+		
+	</class>
+	
+</hibernate-mapping>
+ 

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4F4F4"
+        android:padding="10dip" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/tv_userObj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssss"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_carObj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssss"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_yshw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssss"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_zl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssss"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_xysj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssss"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_qsd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssss"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_mudidi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssss"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_gonglishu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssss"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+
+
